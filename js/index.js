@@ -40,7 +40,7 @@ function animateCircle(circleRadius, ms, animateLabel, cb) {
 		step: function() {
 			//jquery.animate sets overflow: hidden during animation, so need to override that (otherwise label disappears)
 			$('.circle').css("overflow","visible");
-		 }
+		}
 	});
 	var labelText = steps[step][2];
 	if(animateLabel) { //when the big circle shrinks, we want the label to swoop in with it
