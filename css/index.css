@@ -30,3 +30,8 @@
 .image-holder {
 	position: relative;
 }
+
+/* TODO REMOVE LATER - setting a max width so i can easily see and potentially plan to change how they size their application */
+.screenshot {
+  max-width: 700px;
+}
