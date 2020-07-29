@@ -31,7 +31,10 @@ body {
 }
 
 .circle {
-    border: solid 4px #d87070;
+    border: solid .5vw #d87070;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
     cursor: pointer;
     position: absolute;
 }  
@@ -41,10 +44,12 @@ body {
     width: 20vw;
     text-align: center;
     padding: 7px;
-    border: solid 2px #001A2E;
+    border: solid 1px #001A2E;
     border-radius: 5px;
     color: #fff;
     background-color:#002846;
+    /* TODO remove once done working on circle */
+    visibility: hidden;
 }
 
 .screenshot {
