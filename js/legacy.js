@@ -1,5 +1,5 @@
 var steps = [
-	['/img/flow/click-users.png', [1, 280], 'Start by choosing the database table you want to view', true],
+	['/img/flow/1-homeScreen.png', [1, 280], 'Start by choosing the database table you want to view', true],
 	['/img/flow/click-header.png', [765, 155], 'Click a column header to start building your query', true],
 	['/img/flow/click-count-by.png', [777, 257], "Let's GROUP users BY country", false],
 	['/img/flow/click-table-tab.png', [572, 202], 'You can see the results as a chart or a data table', true],

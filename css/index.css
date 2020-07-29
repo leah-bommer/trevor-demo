@@ -1,4 +1,52 @@
 /* TODO REMOVE LATER - setting a max width so i can easily see and potentially plan to change how they size their application */
-.screenshot {
+/* .demo-container {
     max-width: 700px;
+} */
+
+/* TOP */
+/********************* Color reference ****************
+
+dark blue                    db          #00589b
+dark blue darkened 1         dbd1        #002846
+dark blue darkened 2         dbd2        #001A2E
+light blue                   lb          #57a0d7
+orange                       o           #f9bf2c
+yellow                       y           #feed58
+
+*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.7px;
+    line-height: 1.8em;
+    font-size: 2vw;
+}
+
+.demo-container img {
+    width: 100vw;
+}
+
+.image-holder {
+    position: relative;
+}
+
+.circle {
+    border: solid 4px #d87070;
+    cursor: pointer;
+    position: absolute;
+}  
+
+.circle-label {
+    position: absolute;
+    width: 20vw;
+    text-align: center;
+    padding: 7px;
+    border: solid 2px #001A2E;
+    border-radius: 5px;
+    color: #fff;
+    background-color:#002846;
+}
+
+.screenshot {
+    max-width: 100%;
 }
