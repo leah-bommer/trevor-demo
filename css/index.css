@@ -32,8 +32,8 @@ body {
 
 .circle {
     border: solid .5vw #d87070;
-    width: 20vw;
-    height: 20vw;
+    width: 8vw;
+    height: 8vw;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
