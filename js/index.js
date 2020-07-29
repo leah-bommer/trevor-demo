@@ -1,4 +1,6 @@
 
+
+//because sizing and positioning of circle is responsive to the viewport, ill set the coordinates to 
 var imgSequence = [
     ['/img/flow/1-homeScreen.png', [100, 200]],
     ['/img/flow/2-editBills.png', [200, 300]]
@@ -15,7 +17,6 @@ function getImageHeight () {
     return $('.screenshot').height();
 }
 
-
 function getCircleRadius () {
     const selectCircle = document.querySelector('.circle');
     const circleCSSProperties = getComputedStyle(selectCircle);
@@ -23,18 +24,35 @@ function getCircleRadius () {
     return height / 2;
 }
 
-function placeAndAnimateCircle(){
-    var radius = getCircleRadius();
-    var coordinates = imgSequence[currImgIndex][1];
-    console.log('Coordinates of circle: ' + coordinates);
-    console.log('With Radius: ' + radius);
-    console.log('At step: ' + currImgIndex);
 
-    $('.circle')
-        .animate({
-            top: 34,
-            left: 100
-        });
-}
+// function adjusted(length) {
+// 	var originalHeight = 785;
+// 	var currentHeight = $('.screenshot').height();
+// 	var ratio = currentHeight / originalHeight;
+// 	return length * ratio;
+// }
 
-placeAndAnimateCircle();
+// function getRadius() {
+// 	return adjusted(40);
+// }
+
+
+
+// function placeAndAnimateCircle(){
+//     var radius = getCircleRadius();
+//     var coordinates = imgSequence[currImgIndex][1];
+//     console.log('Coordinates of circle: ' + coordinates);
+//     console.log('With Radius: ' + radius);
+//     console.log('At step: ' + currImgIndex);
+
+//     $('.circle')
+//         .animate({
+//             top: getCircleRadius() * 2
+//         }, {
+//             duration: 5,
+//             step: function() {
+//             }
+//         });
+// }
+
+// placeAndAnimateCircle();
