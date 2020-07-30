@@ -16,12 +16,14 @@ yellow                       y           #feed58
 */
 @keyframes pulse {
     0% { height: 8vw; width: 8vw;}
-    50% { height: 10vw; width: 10vw;}
+    20% { height: 8vw; width: 8vw;}
+    60% { height: 9vw; width: 9vw;}
     100% { height: 8vw; width: 8vw;}
 }
 @-webkit-keyframes pulse {
     0% { height: 8vw; width: 8vw;}
-    50% { height: 10vw; width: 10vw;}
+    20% { height: 8vw; width: 8vw;}
+    60% { height: 9vw; width: 9vw;}
     100% { height: 8vw; width: 8vw;}
 }
 
@@ -45,8 +47,8 @@ body {
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
-    animation: pulse 0.5s infinite;
-    -webkit-animation: pulse 3s infinite;
+    animation: pulse 2s infinite;
+    -webkit-animation: pulse 2s infinite;
 }  
 
 .circle-label {
