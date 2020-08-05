@@ -26,7 +26,7 @@ function animateCircle(circleRadius, ms, animateLabel, cb) {
 	var coordinates = steps[step][1];
 	$('.circle')
 		.animate({
-			top: adjusted(coordinates[1]) - (circleRadius - radius),
+			top: adjusted((coordinates[1]) - (circleRadius - radius) + '%'),
 			left: adjusted(coordinates[0]) - (circleRadius - radius),
 			width: circleRadius * 2,
 			height: circleRadius * 2,

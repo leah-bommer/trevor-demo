@@ -12,65 +12,63 @@ dark blue darkened 2         dbd2        #001A2E
 light blue                   lb          #57a0d7
 orange                       o           #f9bf2c
 yellow                       y           #feed58
+/**/
 
-*/
 @keyframes pulse {
-    0% { height: 8vw; width: 8vw;}
-    20% { height: 8vw; width: 8vw;}
-    60% { height: 9vw; width: 9vw;}
-    100% { height: 8vw; width: 8vw;}
-}
-@-webkit-keyframes pulse {
-    0% { height: 8vw; width: 8vw;}
-    20% { height: 8vw; width: 8vw;}
-    60% { height: 9vw; width: 9vw;}
-    100% { height: 8vw; width: 8vw;}
+    0% {
+      transform: scale(1); /* scaling to 0 */
+    }
+    50% {
+      transform: scale(1); /* increasing the size */
+    }
+    70% {
+      transform: scale(1.8); /* decreasing the size */
+    }
+    100% {
+      transform: scale(1); /* seeting back to initial size */
+    }
 }
 
 body {
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.7px;
     line-height: 1.8em;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
-.demo-container img {
-    width: 100vw;
+.focus-point {
+    position: absolute;
 }
 
-.image-holder {
+#circle-id {
     position: relative;
-}
-
-.circle {
+    width: 5vw;
+    height: 5vw;
     border: solid .5vw #d87070;
     border-radius: 50%;
     cursor: pointer;
-    position: absolute;
-    animation: pulse 2s infinite;
-    -webkit-animation: pulse 2s infinite;
-}  
-
-.circle:hover {
-    animation-play-state: paused;
-    -webkit-animation-play-state: paused;
+    animation: pulse 1.5s infinite ease-out;
+    z-index: 10;
 }
 
-.circle-label {
+#circle-label-id {
     position: absolute;
-    width: 20vw;
+    left: 4vw;
+    width: 15vw;
     text-align: center;
-    padding: 7px;
+    padding: 1vw;
     border: solid 1px #001A2E;
     border-radius: 5px;
     color: #fff;
     background-color:#002846;
-    /* TODO remove once done working on circle */
-    /* visibility: hidden; */
-    top: 50vh;
-    left: 40vw;
+}
+
+#circle-label-text-id {
+    max-height: 100%;
+    resize: both;
 }
 
 .screenshot {
+    width: 100vw;
     max-width: 100%;
 }
